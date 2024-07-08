@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
-  Box, Button, Text, Image, Grid, Flex,
+  Box, Button, Text, Image, Grid, Flex, Center,
 } from '@mantine/core';
 
 // import { useChartDimensions } from '../../card-sort-2/assets/hooks/useChartDimensions';
@@ -76,62 +76,64 @@ StimulusParams<any>) {
         Drag and re-arrange the cards below on the left to match the cards on
         the right.
       </Text>
-      <Grid>
-        <Grid.Col
-          span={{ base: 12, md: 6, lg: 3 }}
-          style={{ borderRight: '1px dotted LightGray' }}
-        >
-          <DragDropContext
-            onDragEnd={({ destination, source }) => handlers.reorder({
-              from: source.index,
-              to: destination?.index || 0,
-            })}
+      <Center>
+        <Grid>
+          <Grid.Col
+            span={{ base: 12, md: 6, lg: 3 }}
+            style={{ borderRight: '1px dotted LightGray' }}
           >
-            <Droppable droppableId="dnd-list" direction="vertical">
-              {(provided) => (
-                <div {...provided.droppableProps} ref={provided.innerRef}>
-                  {cardArray}
-                  {provided.placeholder}
-                </div>
-              )}
-            </Droppable>
-          </DragDropContext>
-        </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
-          <Flex
-            justify="space-between"
-            align="flex-start"
-            direction="column"
-            wrap="wrap"
-          >
-            <div className={styles.item}>
-              <Text className={styles.symbol} style={{ width: '400px' }}>
-                1 Most Impacted
-              </Text>
-            </div>
-            <div className={styles.item}>
-              <Text className={styles.symbol} style={{ width: '400px' }}>
-                2
-              </Text>
-            </div>
-            <div className={styles.item}>
-              <Text className={styles.symbol} style={{ width: '400px' }}>
-                3
-              </Text>
-            </div>
-            <div className={styles.item}>
-              <Text className={styles.symbol} style={{ width: '400px' }}>
-                4
-              </Text>
-            </div>
-            <div className={styles.item}>
-              <Text className={styles.symbol} style={{ width: '400px' }}>
-                5 Least Impacted
-              </Text>
-            </div>
-          </Flex>
-        </Grid.Col>
-      </Grid>
+            <DragDropContext
+              onDragEnd={({ destination, source }) => handlers.reorder({
+                from: source.index,
+                to: destination?.index || 0,
+              })}
+            >
+              <Droppable droppableId="dnd-list" direction="vertical">
+                {(provided) => (
+                  <div {...provided.droppableProps} ref={provided.innerRef}>
+                    {cardArray}
+                    {provided.placeholder}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          </Grid.Col>
+          <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+            <Flex
+              justify="space-between"
+              align="flex-start"
+              direction="column"
+              wrap="wrap"
+            >
+              <div className={styles.item}>
+                <Text className={styles.symbol} style={{ width: '400px' }}>
+                  1 Most Impacted
+                </Text>
+              </div>
+              <div className={styles.item}>
+                <Text className={styles.symbol} style={{ width: '400px' }}>
+                  2
+                </Text>
+              </div>
+              <div className={styles.item}>
+                <Text className={styles.symbol} style={{ width: '400px' }}>
+                  3
+                </Text>
+              </div>
+              <div className={styles.item}>
+                <Text className={styles.symbol} style={{ width: '400px' }}>
+                  4
+                </Text>
+              </div>
+              <div className={styles.item}>
+                <Text className={styles.symbol} style={{ width: '400px' }}>
+                  5 Least Impacted
+                </Text>
+              </div>
+            </Flex>
+          </Grid.Col>
+        </Grid>
+      </Center>
 
       <Button onClick={() => clickCallback()}>Confirm Cards</Button>
     </Box>
