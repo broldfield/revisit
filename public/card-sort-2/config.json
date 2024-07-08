@@ -1,67 +1,59 @@
 {
-    "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.0/src/parser/StudyConfigSchema.json",
-    "studyMetadata": {
-        "title": "Card Sort 2",
-        "version": "pilot",
-        "authors": [
-            "The reVISit Team"
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.0/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Card Sort 2",
+    "version": "pilot",
+    "authors": ["The reVISit Team"],
+    "date": "2024-06-15",
+    "description": "Card Sort not natively extended.",
+    "organizations": ["CSIRO"]
+  },
+  "uiConfig": {
+    "contactEmail": "contact@revisit.dev",
+    "helpTextPath": "card-sort-2/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "sidebar": false
+  },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "card-sort-2/assets/introduction.md",
+      "response": []
+    },
+    "trial": {
+      "meta": {
+        "nr-dots": 1
+      },
+      "description": "Card Sort Example",
+      "instruction": "",
+      "type": "react-component",
+      "path": "card-sort-2/CardSortReact.tsx",
+      "parameters": {
+        "cards": [
+          { "label": "Location: A", "text": "A Description" },
+          { "label": "Location: B", "text": "B Description" },
+          { "label": "Location: C", "text": "C Description" },
+          { "label": "Location: D", "text": "D Description" },
+          { "label": "Location: E", "text": "E Description" }
         ],
-        "date": "2024-06-15",
-        "description": "Card Sort not natively extended.",
-        "organizations": [
-            "CSIRO"
-        ]
-    },
-    "uiConfig": {
-        "contactEmail": "contact@revisit.dev",
-        "helpTextPath": "card-sort-2/assets/help.md",
-        "logoPath": "revisitAssets/revisitLogoSquare.svg",
-        "withProgressBar": true,
-        "autoDownloadStudy": false,
-        "sidebar": true
-    },
-    "components": {
-        "introduction": {
-            "type": "markdown",
-            "path": "card-sort-2/assets/introduction.md",
-            "response": []
-        },
-        "trial": {
-            "meta": {
-                "nr-dots": 1
-            },
-            "description": "Card Sort Example",
-            "instruction": "Re-order the cards.",
-            "type": "react-component",
-            "path": "card-sort-2/CardSortReact.tsx",
-            "parameters": {
-                "cards": [
-                    {"label": "A", "text": "A Description"},
-                    {"label": "B", "text": "B Description"},
-                    {"label": "C", "text": "C Description"},
-                    {"label": "D", "text": "D Description"},
-                    {"label": "E", "text": "E Description"}
-
-                ],
-                "taskid": "cardSort2"
-            },
-            "nextButtonLocation": "belowStimulus",
-            "response": [
-                {
-                    "id": "cardSort2",
-                    "prompt": "Re-order the cards",
-                    "required": false,
-                    "location": "belowStimulus",
-                    "type": "iframe"
-                }
-            ]
+        "taskid": "cardSort2"
+      },
+      "nextButtonLocation": "belowStimulus",
+      "response": [
+        {
+          "id": "cardSort2",
+          "prompt": "",
+          "required": false,
+          "location": "belowStimulus",
+          "type": "iframe"
         }
-    },
-    "sequence": {
-        "order": "fixed",
-        "components": [
-            "introduction",
-            "trial"
-        ]
+      ]
     }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": ["introduction", "trial"]
+  }
 }
