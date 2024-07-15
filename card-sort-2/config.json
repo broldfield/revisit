@@ -34,7 +34,7 @@
           "type": "Test"
         },
         "imageData": {
-          "location": "../src/public/card-sort-2/style/test2.png",
+          "location": "./assets/test2.png",
           "fileName": "test2.png",
           "height": "500",
           "width": "1000"
@@ -71,7 +71,7 @@
           "type": "Test"
         },
         "imageData": {
-          "location": "../src/public/card-sort-2/style/fire3.png",
+          "location": "./assets/fire3.png",
           "fileName": "fire3.png",
           "height": "500",
           "width": "1000"
@@ -108,7 +108,7 @@
           "type": "Test"
         },
         "imageData": {
-          "location": "../src/public/card-sort-2/style/Bushfire-Radial.png",
+          "location": "./assets/Bushfire-Radial.png",
           "fileName": "Bushfire-Radial.png",
           "height": "500",
           "width": "1000"
@@ -145,7 +145,7 @@
           "type": "Test"
         },
         "imageData": {
-          "location": "../src/public/card-sort-2/style/Bushfire-semi-radial.png",
+          "location": "./assets/Bushfire-semi-radial.png",
           "fileName": "Bushfire-semi-radial.png",
           "height": "500",
           "width": "1000"
@@ -182,7 +182,7 @@
           "type": "Test"
         },
         "imageData": {
-          "location": "../src/public/card-sort-2/style/bushfire-image.png",
+          "location": "./assets/bushfire-image.png",
           "fileName": "bushfire-image.png",
           "height": "500",
           "width": "1000"
