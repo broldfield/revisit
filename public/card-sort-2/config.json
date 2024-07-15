@@ -22,15 +22,23 @@
       "path": "card-sort-2/assets/introduction.md",
       "response": []
     },
-    "trial": {
-      "meta": {
-        "nr-dots": 1
-      },
+    "trial1": {
       "description": "Card Sort Example",
       "instruction": "",
       "type": "react-component",
       "path": "card-sort-2/CardSortReact.tsx",
       "parameters": {
+        "description": {
+          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
+          "taskText": "Drag and move around the cards.",
+          "type": "Test"
+        },
+        "imageData": {
+          "location": "../src/public/card-sort-2/style/test2.png",
+          "fileName": "test2.png",
+          "height": "500",
+          "width": "1000"
+        },
         "cards": [
           { "label": "Location: A", "text": "A Description" },
           { "label": "Location: B", "text": "B Description" },
@@ -45,7 +53,155 @@
         {
           "id": "cardSort2",
           "prompt": "",
-          "required": false,
+          "required": true,
+          "location": "belowStimulus",
+          "type": "iframe"
+        }
+      ]
+    },
+    "trial2": {
+      "description": "Card Sort Example",
+      "instruction": "",
+      "type": "react-component",
+      "path": "card-sort-2/CardSortReact.tsx",
+      "parameters": {
+        "description": {
+          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
+          "taskText": "Drag and move around the cards.",
+          "type": "Test"
+        },
+        "imageData": {
+          "location": "../src/public/card-sort-2/style/fire3.png",
+          "fileName": "fire3.png",
+          "height": "500",
+          "width": "1000"
+        },
+        "cards": [
+          { "label": "Location: A", "text": "A Description" },
+          { "label": "Location: B", "text": "B Description" },
+          { "label": "Location: C", "text": "C Description" },
+          { "label": "Location: D", "text": "D Description" },
+          { "label": "Location: E", "text": "E Description" }
+        ],
+        "taskid": "cardSortTest2"
+      },
+      "nextButtonLocation": "belowStimulus",
+      "response": [
+        {
+          "id": "cardSortTest2",
+          "prompt": "",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "iframe"
+        }
+      ]
+    },
+    "trial3": {
+      "description": "Card Sort Example",
+      "instruction": "",
+      "type": "react-component",
+      "path": "card-sort-2/CardSortReact.tsx",
+      "parameters": {
+        "description": {
+          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
+          "taskText": "Drag and move around the cards.",
+          "type": "Test"
+        },
+        "imageData": {
+          "location": "../src/public/card-sort-2/style/Bushfire-Radial.png",
+          "fileName": "Bushfire-Radial.png",
+          "height": "500",
+          "width": "1000"
+        },
+        "cards": [
+          { "label": "Location: A", "text": "A Description" },
+          { "label": "Location: B", "text": "B Description" },
+          { "label": "Location: C", "text": "C Description" },
+          { "label": "Location: D", "text": "D Description" },
+          { "label": "Location: E", "text": "E Description" }
+        ],
+        "taskid": "cardSortRadial"
+      },
+      "nextButtonLocation": "belowStimulus",
+      "response": [
+        {
+          "id": "cardSortRadial",
+          "prompt": "",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "iframe"
+        }
+      ]
+    },
+    "trial4": {
+      "description": "Card Sort Example",
+      "instruction": "",
+      "type": "react-component",
+      "path": "card-sort-2/CardSortReact.tsx",
+      "parameters": {
+        "description": {
+          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
+          "taskText": "Drag and move around the cards.",
+          "type": "Test"
+        },
+        "imageData": {
+          "location": "../src/public/card-sort-2/style/Bushfire-semi-radial.png",
+          "fileName": "Bushfire-semi-radial.png",
+          "height": "500",
+          "width": "1000"
+        },
+        "cards": [
+          { "label": "Location: A", "text": "A Description" },
+          { "label": "Location: B", "text": "B Description" },
+          { "label": "Location: C", "text": "C Description" },
+          { "label": "Location: D", "text": "D Description" },
+          { "label": "Location: E", "text": "E Description" }
+        ],
+        "taskid": "cardSortSemiRadial"
+      },
+      "nextButtonLocation": "belowStimulus",
+      "response": [
+        {
+          "id": "cardSortSemiRadial",
+          "prompt": "",
+          "required": true,
+          "location": "belowStimulus",
+          "type": "iframe"
+        }
+      ]
+    },
+    "trial5": {
+      "description": "Card Sort Example",
+      "instruction": "",
+      "type": "react-component",
+      "path": "card-sort-2/CardSortReact.tsx",
+      "parameters": {
+        "description": {
+          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
+          "taskText": "Drag and move around the cards.",
+          "type": "Test"
+        },
+        "imageData": {
+          "location": "../src/public/card-sort-2/style/bushfire-image.png",
+          "fileName": "bushfire-image.png",
+          "height": "500",
+          "width": "1000"
+        },
+        "cards": [
+          { "label": "Location: A", "text": "A Description" },
+          { "label": "Location: B", "text": "B Description" },
+          { "label": "Location: C", "text": "C Description" },
+          { "label": "Location: D", "text": "D Description" },
+          { "label": "Location: E", "text": "E Description" }
+        ],
+        "taskid": "cardSortBushfireImage"
+      },
+      "nextButtonLocation": "belowStimulus",
+      "response": [
+        {
+          "id": "cardSortBushfireImage",
+          "prompt": "",
+          "required": true,
           "location": "belowStimulus",
           "type": "iframe"
         }
@@ -54,6 +210,13 @@
   },
   "sequence": {
     "order": "fixed",
-    "components": ["introduction", "trial"]
+    "components": [
+      "introduction",
+      "trial1",
+      "trial2",
+      "trial3",
+      "trial4",
+      "trial5"
+    ]
   }
 }
