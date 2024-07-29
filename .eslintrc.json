@@ -29,6 +29,7 @@
   "ignorePatterns": ["/public/*"],
   "rules": {
     "class-methods-use-this": "off",
+    "no-trailing-spaces" : "off",
     "linebreak-style": "off",
     "no-restricted-exports": "off",
     "quotes": "off",

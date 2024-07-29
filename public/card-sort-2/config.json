@@ -5,7 +5,7 @@
     "version": "pilot",
     "authors": ["The reVISit Team"],
     "date": "2024-06-15",
-    "description": "Card Sort not natively extended.",
+    "description": "Bushfire Model - Card Sorting.",
     "organizations": ["CSIRO"]
   },
   "uiConfig": {
@@ -29,13 +29,13 @@
       "path": "card-sort-2/CardSortReact.tsx",
       "parameters": {
         "description": {
-          "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
-          "taskText": "Drag and move around the cards.",
+          "text": "The map below shows 10 different simulations of a bushfire where each simulation has a different wind speed. Darker blue regions are regions that many bushfire simulation burnt, and light blue are regions that few simulations burnt.",
+          "taskText": "Drag and arrange the cards in the left column to match the right column. Order the cards by who is in the most danger.",
           "type": "Test"
         },
         "imageData": {
-          "location": "./assets/test2.png",
-          "fileName": "test2.png",
+          "location": "./assets/Bushfire_letters.webp",
+          "fileName": "Bushfire_letters.webp",
           "height": "500",
           "width": "1000"
         },
@@ -67,7 +67,7 @@
       "parameters": {
         "description": {
           "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
-          "taskText": "Drag and move around the cards.",
+          "taskText": "Drag and arrange the cards in the left column to match the right column. Order the cards by who is in the most danger.",
           "type": "Test"
         },
         "imageData": {
@@ -104,7 +104,7 @@
       "parameters": {
         "description": {
           "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
-          "taskText": "Drag and move around the cards.",
+          "taskText": "Drag and arrange the cards in the left column to match the right column. Order the cards by who is in the most danger.",
           "type": "Test"
         },
         "imageData": {
@@ -141,7 +141,7 @@
       "parameters": {
         "description": {
           "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
-          "taskText": "Drag and move around the cards.",
+          "taskText": "Drag and arrange the cards in the left column to match the right column. Order the cards by who is in the most danger.",
           "type": "Test"
         },
         "imageData": {
@@ -178,7 +178,7 @@
       "parameters": {
         "description": {
           "text": "The map below shows the potential path of a bushfire. Each coloured area represents the chance the bushfire spreads to that area.",
-          "taskText": "Drag and move around the cards.",
+          "taskText": "Drag and arrange the cards in the left column to match the right column. Order the cards by who is in the most danger.",
           "type": "Test"
         },
         "imageData": {

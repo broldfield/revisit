@@ -66,13 +66,21 @@ StimulusParams<any>) {
         <Text size="lg" fw={700} style={{ marginBottom: "10px" }}>
           Trial
         </Text>
-        <Text>{description.text}</Text>
+        <Text style={{ marginBottom: "10px", width: "900px" }}>{description.text}</Text>
+        <Text
+          size="sm"
+          fw={300}
+          style={{ marginBottom: "10px", marginTop: "20px" }}
+        >
+          Note: These images are purely fictional and are not indicitive of a real bushfire event.
+        </Text>
         <Image
           radius="md"
           h={imageData.height}
           w={imageData.width}
           fit="contain"
           src={imageData.location}
+          style={{ marginBottom: "10px" }}
         />
         <Text
           size="md"
@@ -81,6 +89,7 @@ StimulusParams<any>) {
         >
           {description.taskText}
         </Text>
+        
         <Center>
           <Grid>
             <Grid.Col
@@ -112,29 +121,29 @@ StimulusParams<any>) {
                 direction="column"
                 wrap="wrap"
               >
-                <div className={styles.item}>
-                  <Text className={styles.symbol} style={{ width: "400px" }}>
-                    1 Most Impacted
+                <div className={styles.rightCard}>
+                  <Text className={styles.rightCardText} style={{ width: "400px" }}>
+                    1st - Most in Danger
                   </Text>
                 </div>
-                <div className={styles.item}>
-                  <Text className={styles.symbol} style={{ width: "400px" }}>
-                    2
+                <div className={styles.rightCard}>
+                  <Text className={styles.rightCardText} style={{ width: "400px" }}>
+                    2nd
                   </Text>
                 </div>
-                <div className={styles.item}>
-                  <Text className={styles.symbol} style={{ width: "400px" }}>
-                    3
+                <div className={styles.rightCard}>
+                  <Text className={styles.rightCardText} style={{ width: "400px" }}>
+                    3rd - Middle Priority
                   </Text>
                 </div>
-                <div className={styles.item}>
-                  <Text className={styles.symbol} style={{ width: "400px" }}>
-                    4
+                <div className={styles.rightCard}>
+                  <Text className={styles.rightCardText} style={{ width: "400px" }}>
+                    4th
                   </Text>
                 </div>
-                <div className={styles.item}>
-                  <Text className={styles.symbol} style={{ width: "400px" }}>
-                    5 Least Impacted
+                <div className={styles.rightCard}>
+                  <Text className={styles.rightCardText} style={{ width: "400px" }}>
+                    5th - Least in Danger
                   </Text>
                 </div>
               </Flex>
