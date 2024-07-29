@@ -1,5 +1,7 @@
 # Introduction
 
-Welcome to our study, This is a click accuracy test – to test your accuracy of clicking on a moving dot.
+Welcome to our study, This is currently a study undergoing development.
 
-This is an example project to show how to pass answers from React component to reVISit Framework.
+You will be tasked with reading a small concept explaination, looking at a map then moving cards around to show understanding of the concept.
+
+Estimated time: 5 minutes.
