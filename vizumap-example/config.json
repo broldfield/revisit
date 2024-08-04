@@ -46,7 +46,7 @@
         },
         "taskid": "vizumap1"
       },
-      "nextButtonLocation": "belowStimulus",
+      "nextButtonLocation": "sidebar",
       "response": [
         {
           "id": "vizumap1",
@@ -78,10 +78,47 @@
           ]
         }
       ]
+    },
+    "trial2": {
+      "description": "Sediment Exaple",
+      "instruction": "Example questions",
+      "type": "image",
+      "path": "vizumap-example/assets/bivariateMap.png",
+      "style": {
+        "width": "800px"
+      },
+      "nextButtonLocation": "sidebar",
+      "response": [
+        {
+          "id": "vizumap-example/image-response",
+          "prompt": "Answer:",
+          "required": true,
+          "location": "sidebar",
+          "type": "radio",
+          "options": [
+            {
+              "label": "A",
+              "value": "A"
+            },
+            {
+              "label": "B",
+              "value": "B"
+            },
+            {
+              "label": "C",
+              "value": "C"
+            },
+            {
+              "label": "D",
+              "value": "D"
+            }
+          ]
+        }
+      ]
     }
   },
   "sequence": {
     "order": "fixed",
-    "components": ["introduction", "trial1"]
+    "components": ["introduction", "trial1", "trial2"]
   }
 }
