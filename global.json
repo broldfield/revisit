@@ -1,8 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.0/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.3/src/parser/GlobalConfigSchema.json",
   "configsList": [
-    "card-sort-2",
-    "vizumap-example",
     "demo-html",
     "demo-cleveland",
     "demo-brush-interactions",
@@ -20,12 +18,6 @@
     "test-parser-errors"
   ],
   "configs": {
-    "card-sort-2": {
-      "path": "card-sort-2/config.json"
-    },
-    "vizumap-example": {
-      "path": "vizumap-example/config.json"
-    },
     "demo-html": {
       "path": "demo-html/config.json"
     },
