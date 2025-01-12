@@ -33,6 +33,10 @@
     "no-restricted-exports": "off",
     "no-restricted-syntax": "off",
     "no-underscore-dangle": "off",
+    "quotes": "off",
+    "object-curly-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "react/jsx-curly-newline": "off",
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "@typescript-eslint/no-unused-expressions": [
       "error",
@@ -46,7 +50,7 @@
     "jsx-a11y/click-events-have-key-events": "off",
     "no-return-await": "off",
     "@typescript-eslint/no-unused-vars": [
-      "error", 
+      "error",
       {
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_"
