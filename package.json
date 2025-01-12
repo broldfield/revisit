@@ -21,6 +21,7 @@
   "dependencies": {
     "@firebase/app-check": "^0.8.0",
     "@firebase/auth": "^1.5.0",
+    "@hello-pangea/dnd": "^17.0.0",
     "@mantine/core": "^7.10.1",
     "@mantine/dates": "^7.10.1",
     "@mantine/form": "^7.10.1",
