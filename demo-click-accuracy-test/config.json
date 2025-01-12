@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v1.0.3/src/parser/StudyConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0-rc1/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
     "title": "Dynamic React Stimuli and Provenance Tracking",
     "version": "pilot",
@@ -22,24 +22,12 @@
     "autoDownloadStudy": false,
     "sidebar": true
   },
-  "components": {
-    "introduction": {
-      "type": "markdown",
-      "path": "demo-click-accuracy-test/assets/introduction.md",
-      "response": []
-    },
+  "baseComponents": {
     "trial": {
-      "meta": {
-        "nr-dots": 1
-      },
       "description": "try to click on the center of the moving dot",
       "instruction": "Click on the moving dot",
       "type": "react-component",
       "path": "demo-click-accuracy-test/assets/ClickAccuracyTest.tsx",
-      "parameters": {
-        "speed": 100,
-        "taskid": "accuracy"
-      },
       "nextButtonLocation": "sidebar",
       "response": [
         {
@@ -52,11 +40,39 @@
       ]
     }
   },
+  "components": {
+    "introduction": {
+      "type": "markdown",
+      "path": "demo-click-accuracy-test/assets/introduction.md",
+      "response": []
+    },
+    "trial1": {
+      "baseComponent": "trial",
+      "meta": {
+        "nr-dots": 1
+      },
+      "parameters": {
+        "speed": 100,
+        "taskid": "accuracy"
+      }
+    },
+    "trial2": {
+      "baseComponent": "trial",
+      "meta": {
+        "nr-dots": 1
+      },
+      "parameters": {
+        "speed": 200,
+        "taskid": "accuracy"
+      }
+    }
+  },
   "sequence": {
     "order": "fixed",
     "components": [
       "introduction",
-      "trial"
+      "trial1",
+      "trial2"
     ]
   }
 }
