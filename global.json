@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0-rc1/src/parser/GlobalConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/GlobalConfigSchema.json",
   "configsList": [
     "tutorial-simple-study",
     "tutorial-react-and-randomization",
@@ -12,13 +12,22 @@
     "demo-html-input",
     "demo-survey",
     "demo-training",
-    "demo-VLAT-full-randomized",
-    "demo-VLAT-mini-randomized",
+    "example-VLAT-full-randomized",
+    "example-VLAT-mini-randomized",
     "demo-html-trrack",
     "demo-click-accuracy-test",
     "demo-image",
+    "demo-video-slider",
     "test-audio",
     "test-library",
+    "library-beauvis",
+    "library-color-blindness",
+    "library-demographics",
+    "library-mic-check",
+    "library-mini-vlat",
+    "library-previs",
+    "library-sus",
+    "library-vlat",
     "test-likert-matrix",
     "test-parser-errors",
     "demo-vega",
@@ -47,6 +56,9 @@
     "example-fairness-jnd": {
       "path": "example-fairness-jnd/config.json"
     },
+    "demo-video-slider": {
+      "path": "demo-video-slider/config.json"
+    },
     "demo-html": {
       "path": "demo-html/config.json"
     },
@@ -59,11 +71,11 @@
     "demo-training": {
       "path": "demo-training/config.json"
     },
-    "demo-VLAT-full-randomized": {
-      "path": "demo-VLAT-full-randomized/config.json"
+    "example-VLAT-full-randomized": {
+      "path": "example-VLAT-full-randomized/config.json"
     },
-    "demo-VLAT-mini-randomized": {
-      "path": "demo-VLAT-mini-randomized/config.json"
+    "example-VLAT-mini-randomized": {
+      "path": "example-VLAT-mini-randomized/config.json"
     },
     "demo-html-trrack": {
       "path": "demo-html-trrack/config.json"
@@ -80,6 +92,38 @@
     },
     "test-library": {
       "path": "test-library/config.json",
+      "test": true
+    },
+    "library-beauvis": {
+      "path": "library-beauvis/config.json",
+      "test": true
+    },
+    "library-color-blindness": {
+      "path": "library-color-blindness/config.json",
+      "test": true
+    },
+    "library-demographics": {
+      "path": "library-demographics/config.json",
+      "test": true
+    },
+    "library-mic-check": {
+      "path": "library-mic-check/config.json",
+      "test": true
+    },
+    "library-mini-vlat": {
+      "path": "library-mini-vlat/config.json",
+      "test": true
+    },
+    "library-previs": {
+      "path": "library-previs/config.json",
+      "test": true
+    },
+    "library-sus": {
+      "path": "library-sus/config.json",
+      "test": true
+    },
+    "library-vlat": {
+      "path": "library-vlat/config.json",
       "test": true
     },
     "test-likert-matrix": {

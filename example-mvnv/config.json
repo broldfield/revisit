@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.0-rc1/src/parser/StudyConfigSchema.json",
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.0.2/src/parser/StudyConfigSchema.json",
   "studyMetadata": {
     "title": "MVNV Study Replication",
     "version": "pilot",
@@ -36,7 +36,6 @@
         {
           "id": "signature",
           "prompt": "Your signature",
-          "required": true,
           "location": "belowStimulus",
           "type": "shortText",
           "placeholder": "Please provide your signature"
@@ -44,7 +43,6 @@
         {
           "id": "accept",
           "prompt": "Do you consent to the study and wish to continue?",
-          "required": true,
           "location": "belowStimulus",
           "type": "radio",
           "options": [
@@ -74,9 +72,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -95,9 +92,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -116,9 +112,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -137,9 +132,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -158,9 +152,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -179,9 +172,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -201,7 +193,6 @@
           "id": "task6",
           "type": "radio",
           "prompt": "Select Answer Below",
-          "required": true,
           "options": [
             "European",
             "North American"
@@ -211,9 +202,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -232,9 +222,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -253,7 +242,6 @@
         {
           "id": "task8-1",
           "prompt": "Select Answer Below",
-          "required": true,
           "location": "sidebar",
           "type": "radio",
           "options": [
@@ -264,7 +252,6 @@
         {
           "id": "task8-2",
           "prompt": "Enter Answer Below",
-          "required": true,
           "location": "sidebar",
           "type": "shortText",
           "placeholder": "answer text"
@@ -286,9 +273,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -307,9 +293,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -328,15 +313,13 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         },
         {
           "id": "task11-2",
           "prompt": "Enter Answer Below",
           "location": "sidebar",
-          "required": true,
           "type": "shortText",
           "placeholder": "answer text"
         }
@@ -357,14 +340,12 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         },
         {
           "id": "task12-1",
           "prompt": "Select Answer Below",
-          "required": true,
           "location": "sidebar",
           "type": "radio",
           "options": [
@@ -391,14 +372,12 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         },
         {
           "id": "task13-1",
           "prompt": "Select Answer Below",
-          "required": true,
           "location": "sidebar",
           "type": "radio",
           "options": [
@@ -425,9 +404,8 @@
         {
           "id": "iframe-task",
           "prompt": "Selected name(s) will show here",
-          "required": true,
           "location": "sidebar",
-          "type": "iframe"
+          "type": "reactive"
         }
       ]
     },
@@ -446,7 +424,6 @@
         {
           "id": "task15",
           "prompt": "Enter Findings Below",
-          "required": true,
           "location": "sidebar",
           "type": "longText"
         }
