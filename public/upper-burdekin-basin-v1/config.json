@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/revisit-studies/study/v2.1.0/src/parser/StudyConfigSchema.json",
+  "studyMetadata": {
+    "title": "Upper Burdekin Basin",
+    "version": "v1",
+    "authors": [
+      "Brodie Oldfield"
+    ],
+    "date": "2025-3-22",
+    "description": "An Uncertainty in maps study.",
+    "organizations": [
+      "CSIRO"
+    ]
+  },
+  "uiConfig": {
+    "contactEmail": "brodie.oldfield@data61.csiro.au",
+    "helpTextPath": "upper-burdekin-basin-v1/assets/help.md",
+    "logoPath": "revisitAssets/revisitLogoSquare.svg",
+    "withProgressBar": true,
+    "autoDownloadStudy": false,
+    "sidebar": true,
+    "enumerateQuestions": true
+  },
+  "components": {
+    "q-unc-a": {
+      "type": "image",
+      "path": "upper-burdekin-basin-v1/assets/image/q-cer-a.png",
+      "style": {
+        "maxWidth": "75%"
+      },
+      "response": [
+        {
+          "id": "response1",
+          "prompt": "What is 2 + 2?",
+          "location": "belowStimulus",
+          "type": "numerical"
+        }
+      ]
+    }
+  },
+  "sequence": {
+    "order": "fixed",
+    "components": [
+      "q-unc-a"
+    ]
+  }
+}
